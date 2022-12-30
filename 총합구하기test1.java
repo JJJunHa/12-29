@@ -8,7 +8,7 @@ public class test1 {
 			total+=x; 
 		x++;}
 		
-System.out.println("1ºÎÅÍ 100±îÁöÀÇ ÃÑÇÕÀº "+total+" ÀÔ´Ï´Ù.");
+System.out.println("1ë¶€í„° 100ê¹Œì§€ì˜ ì´í•©ì€ "+total+" ì…ë‹ˆë‹¤.");
 	}
 
 }

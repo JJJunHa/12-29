@@ -5,7 +5,7 @@ public class whileString {
 	public static void main(String[] args) {
 		
 		
-		System.out.println("¸í·É¾î¸¦ ÀÔ·ÂÇÏ½Ã¿À");
+		System.out.println("ëª…ë ¹ì–´ë¥¼ ìž…ë ¥í•˜ì‹œì˜¤");
 		
 		Scanner s = new Scanner(System.in);
 		String read = s.nextLine();
@@ -14,22 +14,22 @@ public class whileString {
 			if(!(read.equals("x"))) {
 				
 				if(read.equals("m")){
-				System.out.println("¸Þ´º°ü¸®");
+				System.out.println("ë©”ë‰´ê´€ë¦¬");
 			   }
 				if(read.equals("o")) {
-				System.out.println("ÁÖ¹®°ü¸®");
+				System.out.println("ì£¼ë¬¸ê´€ë¦¬");
 			   }
 				if(read.equals("s")){
-				System.out.println("¸ÅÃâ°ü¸®");
+				System.out.println("ë§¤ì¶œê´€ë¦¬");
 			   }
-				System.out.println("¸Þ´º´Ù½ÃÀÔ·Â");
+				System.out.println("ë©”ë‰´ë‹¤ì‹œìž…ë ¥");
 		    }
 			else {
 				break;
 				}
 		read = s.nextLine();
 		} while(!(read.equals("x")));
-		System.out.println("°ü¸® ½Ã½ºÅÛ Á¾·á");
+		System.out.println("ê´€ë¦¬ ì‹œìŠ¤í…œ ì¢…ë£Œ");
 	
 	}
 }

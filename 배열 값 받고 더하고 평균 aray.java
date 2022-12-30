@@ -10,7 +10,7 @@ public class aray {
 		int sum=0;
 		int pp=0;
 		while(i<m.length) {
-			System.out.println("ÀÔ·ÂÇÏ½Ã¿À");
+			System.out.println("ì…ë ¥í•˜ì‹œì˜¤");
 			m[i]=s.nextInt();
 			sum+=(m[i]);
 			i++;
@@ -20,16 +20,16 @@ public class aray {
 		i=0;
 		
 		while(i<m.length) {
-			//Á¡¼öÀÇ ÇÕ°è¸¦ ´©Àû
+			//ì ìˆ˜ì˜ í•©ê³„ë¥¼ ëˆ„ì 
 			System.out.println(m[i]);
 			
 			i++;
 		}
-		System.out.println("ÃÑÇÕ "+sum);
-		System.out.println("Æò±ÕÀº "+(sum/(m.length)));
+		System.out.println("ì´í•© "+sum);
+		System.out.println("í‰ê· ì€ "+(sum/(m.length)));
 		
-		//Æò±ÕÁ¡¼ö °è»ê
-		System.out.println("ÇÁ·Î±×·¥Á¾·á.");
+		//í‰ê· ì ìˆ˜ ê³„ì‚°
+		System.out.println("í”„ë¡œê·¸ë¨ì¢…ë£Œ.");
 	}
 
 }

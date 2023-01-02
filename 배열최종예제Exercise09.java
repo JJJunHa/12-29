@@ -12,15 +12,15 @@ public class Exercise09 {
 		
 		while(run) {
 			System.out.println("---------------------------------------------");
-			System.out.println("1.ÇĞ»ı¼ö | 2.Á¡¼öÀÔ·Â | 3.Á¡¼ö¸®½ºÆ® | 4.ºĞ¼® | 5.Á¾·á");
+			System.out.println("1.í•™ìƒìˆ˜ | 2.ì ìˆ˜ì…ë ¥ | 3.ì ìˆ˜ë¦¬ìŠ¤íŠ¸ | 4.ë¶„ì„ | 5.ì¢…ë£Œ");
 			System.out.println("---------------------------------------------");
-			System.out.println("¼±ÅÃ> ");
+			System.out.println("ì„ íƒ> ");
 			
 			int selectNo = s.nextInt();
 			
 			if(selectNo == 1) {
 				
-				System.out.print("ÇĞ»ı¼ö> " );
+				System.out.print("í•™ìƒìˆ˜> " );
 				studenNum = s.nextInt();
 				
 				scores = new int[studenNum];
@@ -32,7 +32,7 @@ public class Exercise09 {
 					System.out.print("scores["+i+"]:");
 					studenNum = s.nextInt();
 					scores[i]= studenNum;
-					System.out.println("ÀÔ·ÂµÈ Á¡¼ö: "+scores[i]);
+					System.out.println("ì…ë ¥ëœ ì ìˆ˜: "+scores[i]);
 					
 				}
 				
@@ -49,8 +49,8 @@ public class Exercise09 {
 					}
 					sum+=scores[i];
 				}
-				System.out.println("ÃÖ°í Á¡¼ö: "+high);
-				System.out.println("Æò±Õ Á¡¼ö: "+((double)sum)/scores.length);
+				System.out.println("ìµœê³  ì ìˆ˜: "+high);
+				System.out.println("í‰ê·  ì ìˆ˜: "+((double)sum)/scores.length);
 				
 			
 				
@@ -63,7 +63,7 @@ public class Exercise09 {
 
 		}
 		
-		System.out.println("ÇÁ·Î±×·¥ Á¾·á");
+		System.out.println("í”„ë¡œê·¸ë¨ ì¢…ë£Œ");
 
 	}
 

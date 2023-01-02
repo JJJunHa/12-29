@@ -12,7 +12,7 @@ public class Exercise07 {
 			}
 		}
 		
-		System.out.println("�ִ밪�� " + max);
+		System.out.println("ÃÖ´ë°ªÀº " + max);
 		
 
 	}

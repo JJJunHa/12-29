@@ -24,8 +24,8 @@ public class Exercise08 {
 			div += (array[i].length);
 			
 		}
-		System.out.println("¹è¿­¿¡ ÃÑÇÕÀº " + sum);
-		System.out.println("ÃÑÇÕ¿¡ Æò±ºÀº " + ((double)sum/div));
+		System.out.println("ë°°ì—´ì— ì´í•©ì€ " + sum);
+		System.out.println("ì´í•©ì— í‰êµ°ì€ " + ((double)sum/div));
 
 	}
 

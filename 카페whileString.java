@@ -6,7 +6,7 @@ public class whileString {
 	public static void main(String[] args) {
 		
 		
-		System.out.println("¸í·É¾î¸¦ ÀÔ·ÂÇÏ½Ã¿À");
+		System.out.println("ëª…ë ¹ì–´ë¥¼ ì…ë ¥í•˜ì‹œì˜¤");
 		
 		Scanner s = new Scanner(System.in);
 		Scanner s1 = new Scanner(System.in);
@@ -30,7 +30,7 @@ public class whileString {
 		
 		do {
 			System.out.println("---------------------------------------------");
-			System.out.println("m.¸Ş´º°ü¸® | o.ÁÖ¹®°ü¸® | s.¸ÅÃâ°ü¸® | x.Á¾·á");
+			System.out.println("m.ë©”ë‰´ê´€ë¦¬ | o.ì£¼ë¬¸ê´€ë¦¬ | s.ë§¤ì¶œê´€ë¦¬ | x.ì¢…ë£Œ");
 			System.out.println("---------------------------------------------");
 			read = s.nextLine();
 			if(!(read.equals("x"))) {
@@ -40,14 +40,14 @@ public class whileString {
 					
 					do {
 						System.out.println("----------------------------------------------------");
-						System.out.println("C.¸Ş´ºÃß°¡ | R.¸Ş´º¸ñ·Ï Ç¥½Ã | U.¸Ş´º¼öÁ¤ | D.¸Ş´º»èÁ¦ | B.µÚ·Î");
+						System.out.println("C.ë©”ë‰´ì¶”ê°€ | R.ë©”ë‰´ëª©ë¡ í‘œì‹œ | U.ë©”ë‰´ìˆ˜ì • | D.ë©”ë‰´ì‚­ì œ | B.ë’¤ë¡œ");
 						System.out.println("----------------------------------------------------");
 						
 						mread=s.nextLine();
 						
 						if(mread.equals("C")) {
-							System.out.println("¸Ş´ºÃß°¡");
-							System.out.println("B.µÚ·Î");
+							System.out.println("ë©”ë‰´ì¶”ê°€");
+							System.out.println("B.ë’¤ë¡œ");
 							madd = s.nextLine();
 								if(madd.equals("B")) {
 									continue;
@@ -55,45 +55,45 @@ public class whileString {
 							
 								else {
 									alMenu.add(madd);
-									System.out.println("°¡°İÃß°¡");
+									System.out.println("ê°€ê²©ì¶”ê°€");
 									maddp = s1.nextInt();
 									alPrice.add(maddp);
-									System.out.println(madd+"´Â "+maddp+"¿ø ÀÔ´Ï´Ù. ");
+									System.out.println(madd+"ëŠ” "+maddp+"ì› ì…ë‹ˆë‹¤. ");
 								}
 							
 							
 						}else if(mread.equals("R")) {
 							
 							if(alMenu.size()==0) {
-								System.out.println("¸Ş´º ¸ñ·ÏÀÌ ¾ø½À´Ï´Ù.");
+								System.out.println("ë©”ë‰´ ëª©ë¡ì´ ì—†ìŠµë‹ˆë‹¤.");
 								continue;
 							}
 							
-							System.out.println("¸Ş´º¸ñ·Ï Ç¥½Ã");
+							System.out.println("ë©”ë‰´ëª©ë¡ í‘œì‹œ");
 							
 							for(i=0; i<alMenu.size(); i++) {
-								System.out.println((i+1)+" ¹ø ¸Ş´º "+alMenu.get(i)+" : "+alPrice.get(i));
+								System.out.println((i+1)+" ë²ˆ ë©”ë‰´ "+alMenu.get(i)+" : "+alPrice.get(i));
 							}
 							
 						}else if(mread.equals("U")) {
 							
 							if(alMenu.size()==0) {
-								System.out.println("¼öÁ¤ÇÒ ¸Ş´º°¡ ¾ø½À´Ï´Ù.");
+								System.out.println("ìˆ˜ì •í•  ë©”ë‰´ê°€ ì—†ìŠµë‹ˆë‹¤.");
 								continue;
 							}
 							
-							System.out.println("¸Ş´º ¼öÁ¤");
+							System.out.println("ë©”ë‰´ ìˆ˜ì •");
 							
 							for(i=0; i<alMenu.size(); i++) {
-								System.out.println((i+1)+" ¹ø ¸Ş´º "+alMenu.get(i)+" : "+alPrice.get(i));
+								System.out.println((i+1)+" ë²ˆ ë©”ë‰´ "+alMenu.get(i)+" : "+alPrice.get(i));
 							}
 							
-							System.out.println("¼öÁ¤ ÇÒ ¸Ş´ºÀÇ ¹øÈ£¸¦ ÀÔ·ÂÇÏ½Ã¿À");
+							System.out.println("ìˆ˜ì • í•  ë©”ë‰´ì˜ ë²ˆí˜¸ë¥¼ ì…ë ¥í•˜ì‹œì˜¤");
 							maddn = s1.nextInt();
-							System.out.println("¼öÁ¤ÇÒ ¸Ş´º ¹øÈ£ "+maddn+"¹ø¿¡ »õ·Î¿î ¸Ş´º¸í ÀÔ·ÂÇÏ½Ã¿À");
+							System.out.println("ìˆ˜ì •í•  ë©”ë‰´ ë²ˆí˜¸ "+maddn+"ë²ˆì— ìƒˆë¡œìš´ ë©”ë‰´ëª… ì…ë ¥í•˜ì‹œì˜¤");
 							maddr = s.nextLine();
-							System.out.println(maddn+"¹ø"+maddr);
-							System.out.println(maddn+"¹ø¿¡ »õ·Î¿î ¸Ş´º¸í "+maddr+"¿¡ °¡°İÀ» ÀÔ·ÂÇÏ½Ã¿À");
+							System.out.println(maddn+"ë²ˆ"+maddr);
+							System.out.println(maddn+"ë²ˆì— ìƒˆë¡œìš´ ë©”ë‰´ëª… "+maddr+"ì— ê°€ê²©ì„ ì…ë ¥í•˜ì‹œì˜¤");
 							maddrp = s1.nextInt();
 							alMenu.set(maddn-1, maddr);
 							alPrice.set(maddn-1, maddrp);
@@ -102,17 +102,17 @@ public class whileString {
 						}else if(mread.equals("D")) {
 							
 							if(alMenu.size()==0) {
-								System.out.println("»èÁ¦ÇÒ ¸Ş´º°¡ ¾ø½À´Ï´Ù.");
+								System.out.println("ì‚­ì œí•  ë©”ë‰´ê°€ ì—†ìŠµë‹ˆë‹¤.");
 								continue;
 							}
 							
-							System.out.println("¸Ş´º»èÁ¦");
+							System.out.println("ë©”ë‰´ì‚­ì œ");
 							
 							for(i=0; i<alMenu.size(); i++) {
-								System.out.println((i+1)+" ¹ø ¸Ş´º "+alMenu.get(i)+" : "+alPrice.get(i));
+								System.out.println((i+1)+" ë²ˆ ë©”ë‰´ "+alMenu.get(i)+" : "+alPrice.get(i));
 							}
 							
-							System.out.println("»èÁ¦ÇÒ ¸Ş´ºÀÇ ¹øÈ£¸¦ ÀÔ·ÂÇÏ½Ã¿À");
+							System.out.println("ì‚­ì œí•  ë©”ë‰´ì˜ ë²ˆí˜¸ë¥¼ ì…ë ¥í•˜ì‹œì˜¤");
 							maddd=s1.nextInt();
 							alMenu.remove(maddd-1);
 							alPrice.remove(maddd-1);
@@ -126,28 +126,28 @@ public class whileString {
 					if(read.equals("o")) {
 						String read1="";
 						do {
-							System.out.println("ÁÖ¹®°ü¸®");
+							System.out.println("ì£¼ë¬¸ê´€ë¦¬");
 							System.out.println("----------------------------------");
-							System.out.println("C.ÁÖ¹®Ãß°¡ | R.ÁÖ¹®³»¿ªÇ¥½Ã | D.ÁÖ¹®»èÁ¦| B.µÚ·Î");
+							System.out.println("C.ì£¼ë¬¸ì¶”ê°€ | R.ì£¼ë¬¸ë‚´ì—­í‘œì‹œ | D.ì£¼ë¬¸ì‚­ì œ| B.ë’¤ë¡œ");
 							System.out.println("----------------------------------");
 							read1 = s.nextLine();
 							
 							if(read1.equals("C")) {
 								for(i=0; i<alMenu.size(); i++) {
-									System.out.println((i)+" ¹ø ¸Ş´º "+alMenu.get(i)+" : "+alPrice.get(i));
+									System.out.println((i)+" ë²ˆ ë©”ë‰´ "+alMenu.get(i)+" : "+alPrice.get(i));
 								}
 									ndx=0;
 									String ordername="";
 									String test = "";
 									
 									do {
-										System.out.println("³ª°¥·Á¸é"+-1+"À» ÀÔ·ÂÇÏ½Ã¿À");
-										System.out.println("ÁÖ¹®¸íÀ» ÀÔ·ÂÇÏ½Ã¿À");
+										System.out.println("ë‚˜ê°ˆë ¤ë©´"+-1+"ì„ ì…ë ¥í•˜ì‹œì˜¤");
+										System.out.println("ì£¼ë¬¸ëª…ì„ ì…ë ¥í•˜ì‹œì˜¤");
 										ordername=s.nextLine();
 										if(ordername.equals("-1"))break;
-										System.out.println("¸Ş´º¹øÈ£¸¦ ÀÔ·ÂÇÏ½Ã¿À");
+										System.out.println("ë©”ë‰´ë²ˆí˜¸ë¥¼ ì…ë ¥í•˜ì‹œì˜¤");
 										ndx=s1.nextInt();
-										System.out.println("¼ö·®À» ÀÔ·ÂÇÏ½Ã¿À");
+										System.out.println("ìˆ˜ëŸ‰ì„ ì…ë ¥í•˜ì‹œì˜¤");
 										int count = s1.nextInt();
 										sum=count*alPrice.get(ndx);
 										alName.add(ordername);
@@ -158,9 +158,9 @@ public class whileString {
 								
 							}else if(read1.equals("R")){
 								for(i=0; i<alName.size(); i++) {
-									System.out.println("ÁÖ¹®ÀÌ¸§Àº "+alName.get(i));
-									System.out.println("¼ö·®Àº "+alCount.get(i));
-									System.out.println("ÃÑÇÕÀº "+alSum.get(i));
+									System.out.println("ì£¼ë¬¸ì´ë¦„ì€ "+alName.get(i));
+									System.out.println("ìˆ˜ëŸ‰ì€ "+alCount.get(i));
+									System.out.println("ì´í•©ì€ "+alSum.get(i));
 									System.out.println("");
 									
 								}
@@ -168,26 +168,26 @@ public class whileString {
 								
 							}else if(read1.equals("D")) {
 								for(i=0; i<alName.size(); i++) {
-									System.out.println("ÁÖ¹®ÀÌ¸§Àº "+alName.get(i));
-									System.out.println("¼ö·®Àº "+alCount.get(i));
-									System.out.println("ÃÑÇÕÀº "+alSum.get(i));
+									System.out.println("ì£¼ë¬¸ì´ë¦„ì€ "+alName.get(i));
+									System.out.println("ìˆ˜ëŸ‰ì€ "+alCount.get(i));
+									System.out.println("ì´í•©ì€ "+alSum.get(i));
 									System.out.println("");
 									
 								}
-								System.out.println("Áö¿ï ¸Ş´ºÀÇ ¹øÈ£¸¦ ÀÔ·ÂÇÏ½Ã¿À");
+								System.out.println("ì§€ìš¸ ë©”ë‰´ì˜ ë²ˆí˜¸ë¥¼ ì…ë ¥í•˜ì‹œì˜¤");
 									ndx=s1.nextInt();
 									while(ndx!=-1) {
 									alName.remove(ndx);
 									alCount.remove(ndx);
 									alSum.remove(ndx);
 									for(i=0; i<alName.size(); i++) {
-										System.out.println("ÁÖ¹®¹øÈ£´Â "+alName.get(i));
-										System.out.println("¼ö·®Àº "+alCount.get(i));
-										System.out.println("ÃÑÇÕÀº "+alSum.get(i)+" ¿ø");
+										System.out.println("ì£¼ë¬¸ë²ˆí˜¸ëŠ” "+alName.get(i));
+										System.out.println("ìˆ˜ëŸ‰ì€ "+alCount.get(i));
+										System.out.println("ì´í•©ì€ "+alSum.get(i)+" ì›");
 										System.out.println("");
 										}
 									
-									System.out.println("Áö¿ï ¸Ş´ºÀÇ ¹øÈ£¸¦ ÀÔ·ÂÇÏ½Ã¿À");
+									System.out.println("ì§€ìš¸ ë©”ë‰´ì˜ ë²ˆí˜¸ë¥¼ ì…ë ¥í•˜ì‹œì˜¤");
 									ndx=s1.nextInt();
 									
 								}
@@ -202,15 +202,15 @@ public class whileString {
 			  
 				
 				if(read.equals("s")){
-				System.out.println("¸ÅÃâ°ü¸®");
+				System.out.println("ë§¤ì¶œê´€ë¦¬");
 			   }
-				System.out.println("¸Ş´º´Ù½ÃÀÔ·Â");
+				System.out.println("ë©”ë‰´ë‹¤ì‹œì…ë ¥");
 		    }
 			else {
 				break;
 				}
 		} while(!(read.equals("x")));
-		System.out.println("°ü¸® ½Ã½ºÅÛ Á¾·á");
+		System.out.println("ê´€ë¦¬ ì‹œìŠ¤í…œ ì¢…ë£Œ");
 	
 	}
 }
